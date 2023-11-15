@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky-10</title>
+    <style>
+    </style>
+</head>
+<body>
+    <main class="main">
+        <h1>Lucky 10</h1>        
+
+        <h2>Guess A Number from 0-9</h2>
+        <input id="input1" type="number">
+        <button onclick="review()">Submit</button>
+    </main>
+    <main>
+    </main>
+</body>
+</html>
+
+
+<script>
+    let input1 = document.getElementById('input1')
+    function review(){
+        let random = Math.floor(Math.random() * 10)
+        input1.value == random ? alert ("You are right") : alert ("You are wrong")
+        console.log(random);
+    }
+</script>
